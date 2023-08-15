@@ -12,9 +12,12 @@ a,ul,li,h1,p{
     margin:0;
     color: #E5E7EB;
 }
+.background{
+    /* background-color: #241d1cc5;  */
+    background-color: #1F2937;
+}
 
 .header{
-    background-color: #1F2937;
     height: 64px;
     display: flex;
     flex-direction: row;
@@ -39,7 +42,6 @@ a,ul,li,h1,p{
 }
 
 .hero-banner{
-    background-color: #1F2937;
     .content{
         display: flex;
         justify-content: space-between;
@@ -66,9 +68,10 @@ a,ul,li,h1,p{
             .button{
                 background-color: #3882F6;
                 border-radius: 8px;
-                padding: 10px 24px;
+                padding: 10px 48px;
                 align-self: flex-start;
                 font-weight: bold;
+                margin-top: 22px;
             }
         }
         .image{
@@ -87,7 +90,7 @@ a,ul,li,h1,p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin:22px auto;
+        margin:100px auto;
         gap: 22px;
         .title{
             color: #1F2937;
@@ -121,4 +124,66 @@ a,ul,li,h1,p{
             }
         }
     }
+}
+
+.quote-banner{
+    background-color: #E5E7EB;
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 100px auto;
+        gap: 22px;
+        .quote{
+            font-size: 36px;
+            font-style: italic;
+            font-weight: 100;
+            color: #3c4450;
+        }
+        .author{
+            display: flex;
+            justify-content: flex-end;
+            font-size: 18px;
+            font-weight: bolder;
+            color: #3c4450;
+            padding-right: 48px;
+        }
+    }
+}
+
+.cta-banner{
+    width: 80%;
+    margin: auto;
+    .content{
+        background-color: #3882F6;
+        padding: 48px 100px;
+        margin: 100px auto;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 8px;
+        gap: 64px;
+        .description{
+            flex: 2;
+            .title{font-size: 18px;}
+        }
+        .button{
+            flex: 1;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 10px 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+
+.footer{
+    background-color: #1F2937;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
 }
