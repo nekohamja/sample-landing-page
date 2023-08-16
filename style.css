@@ -1,20 +1,22 @@
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Mono', Courier, monospace;
     display:flex;
     flex-direction: column;
     margin: 0;
 }
- /* *{   border: 1px solid gray;}  */
+
 a,ul,li,h1,p{
     text-decoration: none;
     list-style-type: none;
     padding: 0;
     margin:0;
-    color: #E5E7EB;
+    color: white;
 }
 .background{
-    /* background-color: #241d1cc5;  */
-    background-color: #1F2937;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.911),rgba(0, 0, 0, 0.685)),
+        url(./assets/miti-qYreP9QOdrk-unsplash.jpg);
+        background-size: cover;
 }
 
 .header{
@@ -35,7 +37,7 @@ a,ul,li,h1,p{
             font-weight: bold;
         }
         .links{
-            font-size: 14px;
+            font-weight: 300;
             gap: 22px;
         }
     }
@@ -45,7 +47,7 @@ a,ul,li,h1,p{
     .content{
         display: flex;
         justify-content: space-between;
-        align-items: stretch;
+        align-items: center;
         height: 448px;
         width: 80%;
         margin:100px auto;
@@ -58,7 +60,7 @@ a,ul,li,h1,p{
             gap:10px;
             .title{ 
                 color: #F9FAF8;
-                font-weight: bolder;
+                font-weight: bold;
                 font-size: 48px;
             }
             .subtext{
@@ -66,7 +68,7 @@ a,ul,li,h1,p{
                 font-size: 18px;
             }
             .button{
-                background-color: #3882F6;
+                background-color: rgb(206, 127, 37);
                 border-radius: 8px;
                 padding: 10px 48px;
                 align-self: flex-start;
@@ -75,8 +77,6 @@ a,ul,li,h1,p{
             }
         }
         .image{
-            border-radius: 8px;
-            background-color: bisque;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -86,6 +86,7 @@ a,ul,li,h1,p{
 }
 
 .info-grid{
+    background-color: white;
     .content{
         display: flex;
         flex-direction: column;
@@ -93,14 +94,16 @@ a,ul,li,h1,p{
         margin:100px auto;
         gap: 22px;
         .title{
-            color: #1F2937;
+            color: #201a18;
             font-size: 36px;
             font-weight: bold;
+            margin-bottom: 10px;
         }
         .features{
             display: flex;
             flex-direction: row;
             justify-content: center;
+            align-items: flex-start;
             flex-wrap: wrap;
             text-align: center;
             gap: 48px;
@@ -110,15 +113,13 @@ a,ul,li,h1,p{
                 align-items: center;
                 gap: 22px;
                 .card{
-                    border: 2px solid #3882F6;
                     display: flex;
-                    border-radius: 8px;
                     flex-shrink: 0;
                     height: 200px;
                     width: 200px;
                 }
                 .subtext{
-                    color: #1F2937;
+                    color: #201a18;
                     width: 200px;
                 }
             }
@@ -127,7 +128,7 @@ a,ul,li,h1,p{
 }
 
 .quote-banner{
-    background-color: #E5E7EB;
+    background-color: #dbd3cf;
     .content{
         display: flex;
         flex-direction: column;
@@ -138,49 +139,58 @@ a,ul,li,h1,p{
             font-size: 36px;
             font-style: italic;
             font-weight: 100;
-            color: #3c4450;
+            color: #503e3c;
         }
         .author{
             display: flex;
             justify-content: flex-end;
             font-size: 18px;
             font-weight: bolder;
-            color: #3c4450;
+            color: #503e3c;
             padding-right: 48px;
         }
     }
 }
 
 .cta-banner{
-    width: 80%;
-    margin: auto;
+    background-color: white;
     .content{
-        background-color: #3882F6;
-        padding: 48px 100px;
-        margin: 100px auto;
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        border-radius: 8px;
-        gap: 64px;
-        .description{
-            flex: 2;
-            .title{font-size: 18px;}
-        }
-        .button{
-            flex: 1;
-            border: 1px solid #E5E7EB;
+        width: 80%;
+        margin: auto;
+        .cta-bar{
+            background-color: rgb(206, 127, 37);
+            padding: 48px 100px;
+            margin: 100px auto;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            flex-wrap: wrap;
             border-radius: 8px;
-            padding: 10px 24px;
-            font-weight: bold;
-            text-align: center;
+            box-shadow: 
+                0 10px 20px rgba(0, 0, 0, 0.164),
+                0 2px 5px rgba(0, 0, 0, 0.26);
+            gap: 64px;
+            .description{
+                flex: 2;
+                .title{font-size: 18px;}
+                color: white;
+            }
+            .button{
+                flex: 1;
+                border: 1px solid white;
+                background-color: rgb(206, 127, 37);
+                color: white;
+                border-radius: 8px;
+                padding: 10px 24px;
+                font-weight: bold;
+                text-align: center;
+            }
         }
     }
 }
 
 .footer{
-    background-color: #1F2937;
+    background-color: #201a18;
     height: 64px;
     display: flex;
     justify-content: center;
